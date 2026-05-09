@@ -9,8 +9,44 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SocialEmpowermentRouteImport } from './routes/social-empowerment'
+import { Route as RiskResilienceRouteImport } from './routes/risk-resilience'
+import { Route as OurServicesRouteImport } from './routes/our-services'
+import { Route as OurPeopleRouteImport } from './routes/our-people'
+import { Route as GrowthTransformationRouteImport } from './routes/growth-transformation'
+import { Route as ContactRouteImport } from './routes/contact'
 import { Route as IndexRouteImport } from './routes/index'
 
+const SocialEmpowermentRoute = SocialEmpowermentRouteImport.update({
+  id: '/social-empowerment',
+  path: '/social-empowerment',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RiskResilienceRoute = RiskResilienceRouteImport.update({
+  id: '/risk-resilience',
+  path: '/risk-resilience',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OurServicesRoute = OurServicesRouteImport.update({
+  id: '/our-services',
+  path: '/our-services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OurPeopleRoute = OurPeopleRouteImport.update({
+  id: '/our-people',
+  path: '/our-people',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GrowthTransformationRoute = GrowthTransformationRouteImport.update({
+  id: '/growth-transformation',
+  path: '/growth-transformation',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +55,116 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/contact': typeof ContactRoute
+  '/growth-transformation': typeof GrowthTransformationRoute
+  '/our-people': typeof OurPeopleRoute
+  '/our-services': typeof OurServicesRoute
+  '/risk-resilience': typeof RiskResilienceRoute
+  '/social-empowerment': typeof SocialEmpowermentRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/contact': typeof ContactRoute
+  '/growth-transformation': typeof GrowthTransformationRoute
+  '/our-people': typeof OurPeopleRoute
+  '/our-services': typeof OurServicesRoute
+  '/risk-resilience': typeof RiskResilienceRoute
+  '/social-empowerment': typeof SocialEmpowermentRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/contact': typeof ContactRoute
+  '/growth-transformation': typeof GrowthTransformationRoute
+  '/our-people': typeof OurPeopleRoute
+  '/our-services': typeof OurServicesRoute
+  '/risk-resilience': typeof RiskResilienceRoute
+  '/social-empowerment': typeof SocialEmpowermentRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/contact'
+    | '/growth-transformation'
+    | '/our-people'
+    | '/our-services'
+    | '/risk-resilience'
+    | '/social-empowerment'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/contact'
+    | '/growth-transformation'
+    | '/our-people'
+    | '/our-services'
+    | '/risk-resilience'
+    | '/social-empowerment'
+  id:
+    | '__root__'
+    | '/'
+    | '/contact'
+    | '/growth-transformation'
+    | '/our-people'
+    | '/our-services'
+    | '/risk-resilience'
+    | '/social-empowerment'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ContactRoute: typeof ContactRoute
+  GrowthTransformationRoute: typeof GrowthTransformationRoute
+  OurPeopleRoute: typeof OurPeopleRoute
+  OurServicesRoute: typeof OurServicesRoute
+  RiskResilienceRoute: typeof RiskResilienceRoute
+  SocialEmpowermentRoute: typeof SocialEmpowermentRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/social-empowerment': {
+      id: '/social-empowerment'
+      path: '/social-empowerment'
+      fullPath: '/social-empowerment'
+      preLoaderRoute: typeof SocialEmpowermentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/risk-resilience': {
+      id: '/risk-resilience'
+      path: '/risk-resilience'
+      fullPath: '/risk-resilience'
+      preLoaderRoute: typeof RiskResilienceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/our-services': {
+      id: '/our-services'
+      path: '/our-services'
+      fullPath: '/our-services'
+      preLoaderRoute: typeof OurServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/our-people': {
+      id: '/our-people'
+      path: '/our-people'
+      fullPath: '/our-people'
+      preLoaderRoute: typeof OurPeopleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/growth-transformation': {
+      id: '/growth-transformation'
+      path: '/growth-transformation'
+      fullPath: '/growth-transformation'
+      preLoaderRoute: typeof GrowthTransformationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,17 +177,13 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ContactRoute: ContactRoute,
+  GrowthTransformationRoute: GrowthTransformationRoute,
+  OurPeopleRoute: OurPeopleRoute,
+  OurServicesRoute: OurServicesRoute,
+  RiskResilienceRoute: RiskResilienceRoute,
+  SocialEmpowermentRoute: SocialEmpowermentRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}

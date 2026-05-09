@@ -108,12 +108,22 @@ function RootShell({ children }: { children: React.ReactNode }) {
   );
 }
 
+import { SiteHeader } from "@/components/SiteHeader";
+
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
   return (
     <QueryClientProvider client={queryClient}>
-      <Outlet />
+      <div className="min-h-screen">
+        <SiteHeader />
+        <main className="max-w-6xl mx-auto px-4 pb-20">
+          <Outlet />
+        </main>
+        <footer className="text-center text-xs text-muted-foreground py-8">
+          © {new Date().getFullYear()} Zideas — Where Zillion Ideas become Ventures.
+        </footer>
+      </div>
     </QueryClientProvider>
   );
 }
