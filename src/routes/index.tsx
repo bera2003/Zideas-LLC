@@ -6,8 +6,11 @@ import socialImg from "@/assets/social.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Zideas — Where Zillion Ideas become Ventures" },
-      { name: "description", content: "Zideas is a boutique startup specializing in AI-enabled business transformation." },
+      { title: "Zideas LLC" },
+      {
+        name: "description",
+        content: "Zideas is a boutique startup specializing in AI-enabled business transformation.",
+      },
     ],
   }),
   component: AboutPage,
@@ -29,27 +32,47 @@ function AboutPage() {
             key={c.to}
             className="group block rounded-md overflow-hidden border-2 border-border/40 hover:border-primary transition-all hover:-translate-y-1"
           >
-            <img src={c.img} alt={c.title} loading="lazy" width={768} height={768} className="w-full aspect-square object-cover" />
+            <img
+              src={c.img}
+              alt={c.title}
+              loading="lazy"
+              width={768}
+              height={768}
+              className="w-full aspect-square object-cover"
+            />
             <div className="p-3 text-center text-sm text-accent-foreground bg-card">{c.title}</div>
           </Link>
         ))}
       </div>
 
-      <h2 className="text-center mt-14 text-3xl md:text-4xl text-accent italic">
+      <h2 className="text-center mt-14 text-[30px] text-blue-400 font-light leading-tight">
         Zideas: Where Zillion Ideas become Ventures. Powered by AI.
       </h2>
 
-      <div className="mt-10 max-w-4xl mx-auto space-y-5 text-base leading-relaxed text-foreground/90">
+      <div className="mt-12 max-w-4xl mx-auto space-y-8 text-[17px] leading-[2] text-cyan-300 font-light">
         <p>
-          Zideas is a boutique startup specializing in AI-enabled business transformation.
-          We help enterprises advance from incremental automation to fully AI-native operating
-          models. With capabilities spread across the globe (USA, Canada and India), we partner
-          with leading AI, ML, and fintech ecosystems to deliver outsized outcomes.
+          Zideas is a boutique startup specializing in AI-enabled business transformation. We help
+          enterprises advance from incremental automation to fully AI-native operating models. With
+          capabilities spread across the globe (USA, Canada, and India) and partnerships with
+          leading AI, ML, and fintech products, we integrate strategy, engineering, and operations
+          to deliver large-scale transformation.
         </p>
+
         <p>
-          Our practice fuses strategy, data, and engineering — turning ambitious ideas into
-          measurable ventures. From growth and transformation to risk, resilience, and social
-          empowerment, we operate where technology meets purpose.
+          We embed intelligence into business workflows using advanced AI systems, such as Agentic
+          AI, which can organize, act, and adapt. This approach delivers smarter processes and
+          explainable AI agents ready for enterprise adoption.
+        </p>
+
+        <p>
+          Our vision? To unleash a torrent of ingenuity that challenges the status quo and paves the
+          way for a better, brighter future.
+        </p>
+
+        <p>
+          Join us as we embark on this exhilarating journey of transforming small sparks into
+          sweeping change. Together, let's reshape industries, inspire communities, and create a
+          world where innovation reigns supreme!
         </p>
       </div>
     </section>
