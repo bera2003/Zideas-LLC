@@ -45,7 +45,7 @@ export const Route = createFileRoute("/social-empowerment")({
           />
 
           {/* Main Text */}
-          <p className="mt-6 text-center text-foreground/90 leading-relaxed text-sm md:text-base">
+          <p className="mt-6 text-center text-[#4E84E7] leading-relaxed text-sm md:text-base">
             As AI continues to reshape our world, studies predict that 80% of
             today’s jobs will undergo profound changes within the next 5 years.
             <br />
@@ -73,7 +73,7 @@ export const Route = createFileRoute("/social-empowerment")({
           </div>
 
           {/* Footer Text */}
-          <p className="text-center text-foreground/80 mt-16 mb-10 text-sm">
+          <p className="text-center text-[#4E84E7] mt-16 mb-10 text-sm">
             For more information about our service offerings, please send us an
             email at:
             <br />
