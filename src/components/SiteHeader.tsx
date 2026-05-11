@@ -7,7 +7,7 @@ const tabs = [
   { to: "/our-people", label: "Our People" },
   { to: "/our-services", label: "Our Services" },
   { to: "/growth-transformation", label: "Growth & Transformation" },
-  { to: "/risk-resilience", label: "Risk and Resilience" },
+  { to: "/risk-resilience", label: "Risk & Resilience" },
   { to: "/social-empowerment", label: "Social Empowerment" },
   { to: "/contact", label: "Contact Us" },
 ] as const;
