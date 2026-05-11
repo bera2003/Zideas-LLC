@@ -30,32 +30,24 @@ export const Route = createFileRoute("/risk-resilience")({
       </div>
 
       {/* Heading */}
-      <h2 className="text-4xl text-accent italic text-center mt-8">
-        Risk and Resilience
-      </h2>
+      <h2 className="text-4xl text-accent italic text-center mt-8">Risk and Resilience</h2>
 
       {/* Text */}
       <div className="mt-6 text-center text-sm leading-relaxed text-[#4E84E7] max-w-3xl mx-auto space-y-4">
+        <p>Operational risk related events cost businesses more than $1.5 trillion per year.</p>
+
         <p>
-          Operational risk related events cost businesses more than $1.5 trillion
-          per year.
+          Yet, only 24% of business leaders believe their businesses are adequately protected.
+          Traditional risk management paradigms cannot keep up in today’s digital world, where sheer
+          volume and complexity of data far exceed human processing capabilities.
         </p>
 
         <p>
-          Yet, only 24% of business leaders believe their businesses are
-          adequately protected. Traditional risk management paradigms cannot
-          keep up in today’s digital world, where sheer volume and complexity
-          of data far exceed human processing capabilities.
-        </p>
-
-        <p>
-          We bring in AI-powered solutions to mitigate this problem. AI, our
-          risk and resilience offerings are powered by next-generation AI
-          products and technologies. Our unique approach blends the two most
-          potent forces: Artificial and Human Intelligence, enabling our
-          clients to analyse vast amounts of data, detect threats early and
-          design mitigation strategies before risk events occur. We offer the
-          following services:
+          We bring in AI-powered solutions to mitigate this problem. AI, our risk and resilience
+          offerings are powered by next-generation AI products and technologies. Our unique approach
+          blends the two most potent forces: Artificial and Human Intelligence, enabling our clients
+          to analyse vast amounts of data, detect threats early and design mitigation strategies
+          before risk events occur. We offer the following services:
         </p>
       </div>
 
@@ -71,9 +63,7 @@ export const Route = createFileRoute("/risk-resilience")({
             />
           </div>
 
-          <p className="mt-3 text-sm text-[#35F5E6]">
-            Financial Crime (AML, Sanctions, Fraud)
-          </p>
+          <p className="mt-3 text-sm text-[#35F5E6]">Financial Crime (AML, Sanctions, Fraud)</p>
         </div>
 
         {/* Card 2 */}
@@ -86,9 +76,7 @@ export const Route = createFileRoute("/risk-resilience")({
             />
           </div>
 
-          <p className="mt-3 text-sm text-[#35F5E6]">
-            Digital Resilience (Cyber, Data, Tech)
-          </p>
+          <p className="mt-3 text-sm text-[#35F5E6]">Digital Resilience (Cyber, Data, Tech)</p>
         </div>
 
         {/* Card 3 */}
@@ -101,9 +89,7 @@ export const Route = createFileRoute("/risk-resilience")({
             />
           </div>
 
-          <p className="mt-3 text-sm text-[#35F5E6]">
-            Model Validation and Testing
-          </p>
+          <p className="mt-3 text-sm text-[#35F5E6]">Model Validation and Testing</p>
         </div>
 
         {/* Card 4 */}
@@ -116,18 +102,13 @@ export const Route = createFileRoute("/risk-resilience")({
             />
           </div>
 
-          <p className="mt-3 text-sm text-[#35F5E6]">
-            Right-sizing Risk & Compliance Programs
-          </p>
+          <p className="mt-3 text-sm text-[#35F5E6]">Right-sizing Risk & Compliance Programs</p>
         </div>
       </div>
 
       {/* Footer Text */}
       <div className="text-center mt-14 mb-10 text-sm text-[#4E84E7]">
-        <p>
-          For more information about our service offerings, please send us an
-          email at:
-        </p>
+        <p>For more information about our service offerings, please send us an email at:</p>
 
         <p className="mt-2">info@zideasconsulting.com</p>
       </div>

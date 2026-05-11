@@ -32,9 +32,7 @@ function ContactPage() {
     message: false,
   });
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
 
     setFormData((prev) => ({
@@ -75,9 +73,7 @@ function ContactPage() {
       <div className="w-[720px] rounded-[48px] bg-[#4E84E7] p-4 text-[#020620]">
         {/* Heading */}
         <div className="w-full text-center mb-3">
-          <h1 className="text-[20px] leading-[1.1] font-[Lato]">
-            Contact Us
-          </h1>
+          <h1 className="text-[20px] leading-[1.1] font-[Lato]">Contact Us</h1>
         </div>
 
         {/* Form */}
@@ -102,19 +98,13 @@ function ContactPage() {
                   shadow-inner
                   outline-none
                   transition
-                  ${
-                    errors.firstName
-                      ? "border-red-500 border-2"
-                      : "border-gray-300"
-                  }
+                  ${errors.firstName ? "border-red-500 border-2" : "border-gray-300"}
                 `}
               />
             </div>
 
             {errors.firstName && (
-              <p className="text-red-500 text-xs mt-1 ml-4">
-                Please fill out this field.
-              </p>
+              <p className="text-red-500 text-xs mt-1 ml-4">Please fill out this field.</p>
             )}
           </div>
 
@@ -138,19 +128,13 @@ function ContactPage() {
                   shadow-inner
                   outline-none
                   transition
-                  ${
-                    errors.lastName
-                      ? "border-red-500 border-2"
-                      : "border-gray-300"
-                  }
+                  ${errors.lastName ? "border-red-500 border-2" : "border-gray-300"}
                 `}
               />
             </div>
 
             {errors.lastName && (
-              <p className="text-red-500 text-xs mt-1 ml-4">
-                Please fill out this field.
-              </p>
+              <p className="text-red-500 text-xs mt-1 ml-4">Please fill out this field.</p>
             )}
           </div>
 
@@ -174,19 +158,13 @@ function ContactPage() {
                   shadow-inner
                   outline-none
                   transition
-                  ${
-                    errors.email
-                      ? "border-red-500 border-2"
-                      : "border-gray-300"
-                  }
+                  ${errors.email ? "border-red-500 border-2" : "border-gray-300"}
                 `}
               />
             </div>
 
             {errors.email && (
-              <p className="text-red-500 text-xs mt-1 ml-4">
-                Please fill out this field.
-              </p>
+              <p className="text-red-500 text-xs mt-1 ml-4">Please fill out this field.</p>
             )}
           </div>
 
@@ -210,19 +188,13 @@ function ContactPage() {
                   shadow-inner
                   outline-none
                   transition
-                  ${
-                    errors.phone
-                      ? "border-red-500 border-2"
-                      : "border-gray-300"
-                  }
+                  ${errors.phone ? "border-red-500 border-2" : "border-gray-300"}
                 `}
               />
             </div>
 
             {errors.phone && (
-              <p className="text-red-500 text-xs mt-1 ml-4">
-                Please fill out this field.
-              </p>
+              <p className="text-red-500 text-xs mt-1 ml-4">Please fill out this field.</p>
             )}
           </div>
 
@@ -247,19 +219,13 @@ function ContactPage() {
                   shadow-inner
                   outline-none
                   transition
-                  ${
-                    errors.message
-                      ? "border-red-500 border-2"
-                      : "border-gray-300"
-                  }
+                  ${errors.message ? "border-red-500 border-2" : "border-gray-300"}
                 `}
               />
             </div>
 
             {errors.message && (
-              <p className="text-red-500 text-xs mt-1 ml-4">
-                Please fill out this field.
-              </p>
+              <p className="text-red-500 text-xs mt-1 ml-4">Please fill out this field.</p>
             )}
           </div>
 

@@ -70,8 +70,7 @@ export function SiteHeader() {
                   to={t.to}
                   activeOptions={{ exact: true }}
                   activeProps={{
-                    className:
-                      "!bg-[#35F5E6] !text-[#020620] !border-[#35F5E6]",
+                    className: "!bg-[#35F5E6] !text-[#020620] !border-[#35F5E6]",
                   }}
                   className="
                     carousel-link
@@ -98,9 +97,7 @@ export function SiteHeader() {
                     hover:text-[#35F5E6]
                   "
                 >
-                  <span className="flex items-center gap-[16px]">
-                    {t.label}
-                  </span>
+                  <span className="flex items-center gap-[16px]">{t.label}</span>
                 </Link>
               </li>
             ))}
